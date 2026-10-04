@@ -187,7 +187,7 @@ address {
  
 footer { padding: 20px; text-align: center; font-size: .85rem; color: #4a5766; }
  
-/* Botón flotante */
+/* Botón flotante circular de WhatsApp */
 .fab {
   position: fixed;
   right: 16px;
@@ -195,16 +195,14 @@ footer { padding: 20px; text-align: center; font-size: .85rem; color: #4a5766; }
   z-index: 50;
   display: flex;
   align-items: center;
-  gap: 8px;
-  height: 60px;
-  padding: 0 22px 0 16px;
+  justify-content: center; /* Centra el ícono perfectamente */
+  width: 60px;   /* Ancho fijo igual al alto */
+  height: 60px;  /* Alto fijo */
+  padding: 0;    /* Sin relleno lateral para que no se deforme */
   background: var(--wa);
   color: #fff;
-  border-radius: 40px;
+  border-radius: 50%; /* Lo vuelve completamente circular */
   text-decoration: none;
-  font-weight: 800;
-  font-size: 1.35rem;
-  text-transform: uppercase;
   box-shadow: 0 6px 18px rgba(14, 27, 44, .35);
   transition: opacity .25s ease, transform .25s ease;
   animation: pulse 2.4s ease-out infinite;
