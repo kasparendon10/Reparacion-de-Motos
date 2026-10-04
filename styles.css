@@ -217,7 +217,29 @@ footer { padding: 20px; text-align: center; font-size: .85rem; color: #4a5766; }
   70%  { box-shadow: 0 6px 18px rgba(14,27,44,.35), 0 0 0 16px rgba(31,175,84,0); }
   100% { box-shadow: 0 6px 18px rgba(14,27,44,.35), 0 0 0 0 rgba(31,175,84,0); }
 }
- 
+ /* Estilo base del botón flotante de Instagram */
+.btn-flotante-instagram {
+    position: fixed;
+    bottom: 90px; /* Queda arriba del de WhatsApp (que suele estar a 20px) */
+    right: 20px;
+    background: #E1306C; /* Color oficial de Instagram */
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Efecto al pasar el mouse o presionar */
+.btn-flotante-instagram:hover {
+    transform: scale(1.1);
+    background: #c13584;
+}
 /* Pantallas más grandes */
 @media (min-width: 720px) {
   .services { grid-template-columns: 1fr 1fr; }
